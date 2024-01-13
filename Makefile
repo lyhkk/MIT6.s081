@@ -188,6 +188,7 @@ UPROGS=\
 	$U/_mkdir\
 	$U/_rm\
 	$U/_sh\
+	$U/_sleep\
 	$U/_stressfs\
 	$U/_usertests\
 	$U/_grind\
@@ -409,4 +410,4 @@ myapi.key:
 .PHONY: handin tarball tarball-pref clean grade handin-check
 
 gdb:
-    riscv64-unknown-elf-gdb kernel/kernel
+	riscv64-unknown-elf-gdb kernel/kernel
